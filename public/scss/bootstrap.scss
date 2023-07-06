@@ -1,0 +1,64 @@
+/******* Customized Bootstrap ********/
+
+$primary: #348E38;
+$secondary: #525368;
+$light: #E8F5E9;
+$dark: #0F4229;
+
+$font-family-base: 'Open Sans', sans-serif;
+
+$headings-font-family: 'Jost', sans-serif;
+
+$body-color: $secondary;
+
+$headings-color: $dark;
+
+$headings-font-weight: 700;
+
+$display-font-weight: 700;
+
+$enable-responsive-font-sizes: true;
+
+$border-radius: 4px;
+
+$border-radius-sm: $border-radius;
+
+$border-radius-lg: $border-radius;
+
+$link-decoration: none;
+
+$enable-negative-margins: true;
+
+@import "bootstrap/scss/bootstrap";
+
+
+.btn{
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    } 
+    .slider_btn{
+    width: 45px;
+    height: 45px;
+    background-color:rgba($color: #ddd, $alpha: 0.6);
+    border-radius: 50% ;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.2s ease-in-out;
+    }
+    .slider_btn:hover{
+        background-color:rgba($color: #ddd, $alpha: 1);
+    }
+    .slider_prev{
+        left: -45px;
+    }
+    .slider_next{
+        right: -45px;
+    }
